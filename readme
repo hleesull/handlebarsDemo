@@ -1,8 +1,9 @@
------Before you begin-----
+-----To use handlebarsDemo-----
 
 If not already installed, install Node JS on your system. Link = https://nodejs.org/en/download/
 install express and express-handlebars using command "npm install express express-handlebars -S"
 start application using command "node server.js" 
+(running handlebarsDemo is not necessary to understand the CVE-2019-20920 vulnerability, but shows handlebars and the lookup helper.) 
 
 -----Handlebars-----
 
@@ -12,16 +13,18 @@ for more information on handlebars see: https://handlebarsjs.com/guide/
 
 -----CVE-2019-20920-----
 
-Handlebars before 3.0.8 and 4.x before 4.5.3 is vulnerable to Arbitrary Code Execution. The lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript. This can be used to run arbitrary code on a server processing Handlebars templates or in a victim's browser, effectively serving as XSS.
+Handlebars before 3.0.8 and 4.x before 4.5.3 is vulnerable to Arbitrary Code Execution. 
+The lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript. 
+This can be used to run arbitrary code on a server processing Handlebars templates or in a victim's browser, effectively serving as XSS.
 
 source: https://nvd.nist.gov/vuln/detail/cve-2019-20920
 
 -----PortSwigger Demonstration-----
 
-The lookup helper vulnerability is demonstrated in a PortSwigger lab.
-
-First, walk through the PortSwigger lab. While completing the lab, be sure to read the blogpost on the vulnerability. There you will find the code that can be injected into Handlebar templates, look particularly at the one that uses lookup. Then read PDF "understanding Handlebars lookup helper" to understnad how the lookup helper vulnerability and how it was fixed. 
+The lookup helper vulnerability is demonstrated in a PortSwigger lab. 
+First, walk through the PortSwigger lab. While completing the lab, be sure to read the blogpost on the vulnerability. 
+There you will find the code that can be injected into Handlebar templates, look particularly at the one that uses lookup. 
+Then read PDF "understanding Handlebars lookup helper" to understnad how the lookup helper vulnerability and how it was fixed. 
 
 link to PortSwigger lab: https://portswigger.net/web-security/server-side-template-injection/exploiting/lab-server-side-template-injection-in-an-unknown-language-with-a-documented-exploit
-
 https://mahmoudsec.blogspot.com/2019/04/handlebars-template-injection-and-rce.html (Blogpost)

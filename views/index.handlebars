@@ -1,0 +1,22 @@
+
+<h2>Handlebars Arbitrary Code Execution Vulnerability CVE-2019-20920</h2>
+<p>Demo by Lee Sullivan</p>
+
+<h3>Handlebars</h3>
+<p>Handle bars is a simple templating language.
+It uses a template and an input object to generate HTML or other text formats.
+Handlebars templates look like regular text with embedded Handlebars expressions. (This application is written with Handlebars!)</p>
+<p>for more information on handlebars see: {{source1}}</p> 
+
+<h3>CVE-2019-20920</h3>
+<p>Handlebars before 3.0.8 and 4.x before 4.5.3 is vulnerable to Arbitrary Code Execution. 
+The lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript. 
+This can be used to run arbitrary code on a server processing Handlebars templates or in a victim's browser, effectively serving as XSS.</p>
+<p>source: {{source2}}</p>
+
+<h3>PortSwigger Demonstration</h3>
+<p>The lookup helper vulnerability is demonstrated in a PortSwigger lab.</p>
+<p>First, I will walk through the PortSwigger lab. Then I will step through the lookup helper code 
+    to explain how the vulnerability happened and how it was fixed. 
+</p>
+<p>link to PortSwigger lab: {{source3}}</p>

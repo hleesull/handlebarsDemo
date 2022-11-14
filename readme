@@ -1,9 +1,9 @@
 -----To use handlebarsDemo-----
 
+(running handlebarsDemo is not necessary to understand the CVE-2019-20920 vulnerability, but it shows handlebars code and the lookup helper.) 
 If not already installed, install Node JS on your system. Link = https://nodejs.org/en/download/
 install express and express-handlebars using command "npm install express express-handlebars -S"
 start application using command "node server.js" 
-(running handlebarsDemo is not necessary to understand the CVE-2019-20920 vulnerability, but shows handlebars and the lookup helper.) 
 
 -----Handlebars-----
 

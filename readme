@@ -7,7 +7,8 @@ start application using command "node server.js"
 
 -----Handlebars-----
 
-Handle bars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions. (This application is written with Handlebars!)
+Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. 
+Handlebars templates look like regular text with embedded Handlebars expressions. (This application is written with Handlebars!)
 
 for more information on handlebars see: https://handlebarsjs.com/guide/
 
